@@ -1,8 +1,6 @@
 def main():
-    # num = input("enter your number")
-    # print(nextBiggest(num))
-    print(countingPalindromes())
-    print(1097*1097)
+    num = input("enter your number")
+    print(nextBiggest(num))
 def nextBiggest(num):
     intNum = int(num)
     # if len(num) % 2 == 0:
@@ -52,12 +50,6 @@ def reversing(nonReversedPart):
         reversedPart = reversedPart * 10 + digit
         nonReversedPart //= 10
     return reversedPart
-
-def countingPalindromes():
-    count=0
-    for x in range(1,99999):
-        if reversing(x)==x:
-            print(x)
 
 
 if __name__ == '__main__':
